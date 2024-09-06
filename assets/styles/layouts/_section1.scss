@@ -1,0 +1,50 @@
+.section1{
+    background: $white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    .intro-text{
+        margin: 15px;
+        border: 1px dashed $brown1;
+
+        h2{
+            margin: 40px 0 -10px;
+            font-size: 2rem;
+            font-weight: 100;
+        }
+        h3{
+            font-size: 1.2rem;
+            font-family: $font2;
+        }
+        .img_1{
+            margin: 30px 0;
+        }
+        p{
+            width: 90%;
+            margin: 0 auto;
+            line-height: 25px;
+            font-size: 0.9rem;
+        }
+        .img_2{
+            width: 70px;
+            height: 70px;
+            margin: 20px 0 10px;
+            border-radius: 50%;
+        }
+        h4{
+            font-family: $font2;
+            font-weight: 500;
+        }
+        h5{
+            margin: 0 0 30px;
+            font-family: $font3;
+            font-weight: 600;
+            color: $grey;
+            font-size: 0.7rem;
+        }
+    }
+
+    .intro-pic{
+        background: url("../img/store-01.jpg") center/cover;
+    }
+}

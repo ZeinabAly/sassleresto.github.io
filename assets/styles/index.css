@@ -1,0 +1,294 @@
+@font-face {
+  font-family: "allura";
+  src: url("../fonts/Allura-Regular.ttf");
+}
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/Roboto-Light.ttf");
+}
+body {
+  text-align: center;
+  font-family: roboto, sans-serif;
+  background: rgb(35, 31, 31);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h2 {
+  font-family: allura, helvetica;
+  color: rgb(166, 114, 69);
+}
+
+header {
+  min-height: 100vh;
+  background: url("../img/bg-slider-06.jpg") center/cover;
+}
+header nav {
+  width: 90%;
+  max-width: 1300px;
+  height: 100px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header nav .logo {
+  color: #eee;
+  font-family: allura, helvetica;
+  font-size: 2.3rem;
+}
+header nav ul {
+  color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+}
+header nav li {
+  margin: 0 40px;
+  list-style: none;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+header nav li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: rgb(182, 182, 182);
+}
+header nav div {
+  color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header nav i {
+  margin: 0 10px;
+  font-size: 0.9rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+header nav i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: rgb(182, 182, 182);
+}
+header .header-text {
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header .header-text h2 {
+  font-size: 3rem;
+  font-weight: 100;
+}
+header .header-text h1 {
+  margin-top: -30px;
+  font-size: 3.5rem;
+  letter-spacing: 5px;
+  color: #eee;
+  font-family: poppins, georgia;
+}
+header .header-text img {
+  width: 30px;
+  margin: 30px 0 40px;
+}
+header .header-text h6 {
+  font-size: 0.7rem;
+  letter-spacing: 5px;
+  color: #eee;
+  font-family: roboto, sans-serif;
+}
+
+.section1 {
+  background: #eee;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.section1 .intro-text {
+  margin: 15px;
+  border: 1px dashed rgb(166, 114, 69);
+}
+.section1 .intro-text h2 {
+  margin: 40px 0 -10px;
+  font-size: 2rem;
+  font-weight: 100;
+}
+.section1 .intro-text h3 {
+  font-size: 1.2rem;
+  font-family: poppins, georgia;
+}
+.section1 .intro-text .img_1 {
+  margin: 30px 0;
+}
+.section1 .intro-text p {
+  width: 90%;
+  margin: 0 auto;
+  line-height: 25px;
+  font-size: 0.9rem;
+}
+.section1 .intro-text .img_2 {
+  width: 70px;
+  height: 70px;
+  margin: 20px 0 10px;
+  border-radius: 50%;
+}
+.section1 .intro-text h4 {
+  font-family: poppins, georgia;
+  font-weight: 500;
+}
+.section1 .intro-text h5 {
+  margin: 0 0 30px;
+  font-family: roboto, sans-serif;
+  font-weight: 600;
+  color: rgb(182, 182, 182);
+  font-size: 0.7rem;
+}
+.section1 .intro-pic {
+  background: url("../img/store-01.jpg") center/cover;
+}
+
+.section2 {
+  height: 100%;
+  margin-top: 0;
+  padding-bottom: 30px;
+  position: relative;
+}
+.section2::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  z-index: -1;
+  background: transparent;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.section2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  z-index: -1;
+  background: url("../img/bg-menu-01.jpg") center/cover;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.section2 h2 {
+  padding: 50px 0 40px;
+  font-size: 2rem;
+  font-weight: 100;
+}
+.section2 ul {
+  width: 50%;
+  margin: 20px auto 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.section2 li {
+  padding: 7px 0;
+  list-style: none;
+  color: #eee;
+  font-family: roboto, sans-serif;
+  border-bottom: 1px solid #eee;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.section2 li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.section2 .meals {
+  width: 60%;
+  margin: 0 auto 100px;
+  padding: 20px;
+  background: white;
+  -webkit-box-shadow: 2px 2px 10px rgb(22, 22, 22), -2px -2px 10px rgb(22, 22, 22);
+          box-shadow: 2px 2px 10px rgb(22, 22, 22), -2px -2px 10px rgb(22, 22, 22);
+  border-top: 5px solid rgb(166, 114, 69);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.section2 .meals .meal {
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px dashed rgb(182, 182, 182);
+  text-align: left;
+}
+.section2 .meals .meal img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.section2 .meals .meal .meal-text {
+  margin-right: 20%;
+}
+.section2 .meals .meal h3 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.section3 {
+  background: rgb(226, 218, 218);
+}/*# sourceMappingURL=index.css.map */
